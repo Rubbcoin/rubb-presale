@@ -1,4 +1,8 @@
-/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
 
 *,
 *::before,
@@ -10,7 +14,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: theme('fontFamily.sans');
   background-color: #020617;
   color: #e2e8f0;
 }
@@ -18,8 +22,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-input {
-  font-family: inherit;
 }
